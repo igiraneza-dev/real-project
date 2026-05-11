@@ -1,0 +1,92 @@
+<html>
+    <head><title>services</title>
+    <link rel="stylesheet" type="text/css" href="services.css">
+    </head>
+    <body>
+        
+        <div class="div1"> 
+            <span id="s1">MTC tss</span>
+         <span id="s2">
+            <a href="index.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="academics.html">ACADEMICS</a>
+            <a href="admission.html">ADMISSION</a>
+            <a href="contact.html">GALLEY</a>
+            <a href="galley.html">CONTACT US</a>
+         </span>
+         </div>
+         <div id="menus">
+            <br><br><br><br><br><br><br><br><br>
+            <a href="services.html" class="a">student poltal</a><br><br><br>
+            <a href="trainer.html" class="a">trainer portal</a><br><br><br>
+            <a href="worker.html" class="a">other workers portal</a><br><br><br>
+            <a href="support.html" class="a">student support services</a><br><br><br><br><br><br><br><br><br>
+         </div>
+    <div id="l1">
+        <h1 class="l1">MTC TSS Student Registration</h1>
+        <form onsubmit="return student()" action="" method="post">
+         <label for="studentname">Student Name:</label>
+         <input type="text" name="studentname" placeholder="studentname" id="username" class="l3"><br>
+           <label for="password">Student Code:</label>
+            <input type="password" name="password" placeholder="student number" id="password" class="l3"><br>
+            <label for="school">Former School:</label>
+            <input type="text" name="text" placeholder="former school name" id="school" class="l3"><br>
+            <label for="trade">Trade and Level:</label>
+            <input type="text" name="text" placeholder="trade and level" id="trade" class="l3"><br>
+         <label for="date">Date of Birth:</label>
+         <input type="date" name="date" placeholder="your dob" id="date" class="l3"><br>
+         Select your gender:<br>
+         <input type="radio" name="gender" value="male"> Male<br>
+         <input type="radio" name="gender" value="female"> Female<br>
+         <label for="mother">Mother:</label>
+         <input type="text" name="woman" id="mother" placeholder="enter your mother's name" class="l3"><br>
+         <label for="tel1">Tel Number:</label>
+         <input type="number" name="number" placeholder="telephone number" class="l3"><br>
+         <label for="father">Father:</label>
+         <input type="text" name="male" id="father" placeholder="enter your father's name" class="l3"><br>
+         <label for="tel2">Tel Number:</label>
+         <input type="number" name="number" placeholder="enter telephone number" class="l3"><br>
+             Upload a report of last term:<br><br>
+        <input type="file" id="file" placeholder="upload report of the last term" class="file"><br>
+        <input type="submit" value="submit" class="l2" id="op"><br>
+    </form>
+    </div>
+    <div id="app">
+        <span>
+            <br><br><br>
+        1.you have to provive all infomation<br> as recommended<br>
+        2.some of other information will be<br> provided when you contact us<br><br><br>
+        number to cantact <br>for more info:0788862529<br>
+        </span>
+    </div>
+    <script>
+        function student() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var school = document.getElementById('school').value;
+    var trade = document.getElementById('trade').value;
+    var mother = document.getElementById('mother').value;
+    var father = document.getElementById('father').value;
+    var date = document.getElementById('date').value;
+    var file = document.getElementById('file').value;
+    var output = document.getElementById('op');
+    output.style.display = "block";
+     if (username === "" || password === "" || school === "" || trade === "" || mother === "" || father === "" || date === "" || file === "") {
+       alert("Please fill in all required fields first.");
+        return false;
+    }
+    else if (password.length < 12) {
+        alert("Student code must be at least 12 characters long.");
+        return false;
+    }
+    else{
+
+    alert("Thanks, your admission is registered successfully");
+    return true;
+}
+        }
+    </script>
+            <div id="copy">&copy copy right by janvier</div>
+    </body>
+</html>

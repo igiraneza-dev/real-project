@@ -1,0 +1,77 @@
+<html>
+    <head><title>services</title>
+    <link rel="stylesheet" type="text/css" href="worker.css">
+    </head>
+    <body>
+        
+        <div class="div1"> 
+            <span id="s1">MTC tss</span>
+         <span id="s2">
+            <a href="index.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="academics.html">ACADEMICS</a>
+            <a href="admission.html">ADMISSION</a>
+            <a href="contact.html">GALLEY</a>
+            <a href="galley.html">CONTACT US</a>
+         </span>
+         </div>
+         <div id="menus">
+            <br><br><br><br><br><br><br><br><br>
+            <a href="services.html">student poltal</a><br><br><br>
+            <a href="trainer.html">trainer portal</a><br><br><br>
+            <a href="worker.html">other workers portal</a><br><br><br>
+            <a href="support.html">student support services</a><br><br><br><br><br><br><br><br><br>
+         </div>
+         
+    <div id="l1">
+        <h1 class="l1">MTC TSS Other Workers Registration</h1>
+        <form onsubmit="return worker()" action="" method="post">
+            <label for="workername">Your Name:</label>
+            <input type="text" name="workername" placeholder="Your Name" id="username" class="l3"><br>
+            <label for="job">Former Job:</label>
+            <input type="text" name="text" placeholder="Former Job Name" id="school" class="l3"><br>
+            <label for="jobapp">Job:</label>
+            <input type="text" name="text" placeholder="Job You Are Applying For" id="trade" class="l3"><br>
+            <label for="date">Date of Birth:</label>
+            <input type="date" name="date" placeholder="Your DOB" id="date" class="l3"><br>
+            Select your gender:<br>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <label for="tel">Tel Number:</label>
+            <input type="number" name="number" placeholder="Telephone Number" class="l3"><br>
+            Upload your ID:<br><br>
+            <input type="file" id="file" placeholder="Your ID Photo to Confirm Info You Gave Us" class="file"><br>
+            <input type="submit" value="Submit" class="l2" id="op"><br>
+        </form>
+    </div>
+    <div id="app">
+        <span>
+            <br><br><br>
+        1.you have to provive all infomation<br> as recommended<br>
+        2.some of other information will be<br> provided when you contact us<br><br><br>
+        number to cantact<br> for more info:0788862529<br>
+        </span>
+    </div>
+    <script>
+        function worker() {
+            var username = document.getElementById('username').value;
+            var school = document.getElementById('school').value;
+            var trade = document.getElementById('trade').value;
+            var date = document.getElementById('date').value;
+            var file = document.getElementById('file').value;
+            var output = document.getElementById('op');
+            output.style.display = "block";
+            if (username === "" || school === "" || trade === "" || date === "" || file === "") {
+                alert("Please fill in all required fields first.");
+                return false;
+            } else {
+                alert("Thanks, your worker registration is successful");
+                return true;
+            }
+        }
+    </script>
+    </hr>
+            <div id="copy">&copy copy right by janvier</div>
+    </body>
+</html>

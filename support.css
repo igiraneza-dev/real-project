@@ -1,0 +1,164 @@
+
+        body{
+    padding: 0%;
+    margin: 0%;
+ 
+}
+.div1{
+background:linear-gradient(rgb(150, 216, 247),whitesmoke);
+color:rgba(7, 3, 3, 0.945);
+width: 100%;
+height: 10%;
+padding: 23px;
+margin:1px;
+position: fixed;
+margin-left: 5px;
+border-radius: 10px;
+}
+a{
+color:rgb(8, 0, 0);
+width: 60px;   
+margin-left:30px;
+text-decoration: none;
+border-radius:4px ;
+}
+#b{
+width: 100%;
+color: gold;
+text-decoration: none;
+padding: 30px;
+transition: 5s;
+}
+a:hover{
+    background-color: whitesmoke;
+    color: rgb(128, 207, 243);
+    border: 5px gold solid;
+}
+#s1{
+    float: left;
+    font-size: 30px;
+    margin-left: 130px;
+    justify-content: space-between;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+#s2{
+    float: right;
+    margin-top: 0%;
+    margin-left: -140px;
+    font-size: 20px;
+    padding: 30px;
+}
+#copy{
+    width:100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    color:rgba(8, 1, 1, 0.938);
+    font-size: 20px;
+    margin-top: 20PX;
+    background: linear-gradient(rgb(17, 122, 170),whitesmoke);
+    }
+#hi{
+    color: gold;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 200px;
+}
+#menus{
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    height: 1300px;
+    width:20% ;
+    background: linear-gradient(rgb(137, 209, 243),whitesmoke);
+    font-size: 20px;
+    text-decoration: none;
+    color: gold;
+}
+#menus input{
+   align-items: center;
+   width: 100px;
+   height: 40px;
+   background-color: aqua; 
+   margin-left: 0px;
+   margin-top: -50;
+}
+#menus a{
+    text-decoration: none;
+    text-align: center;
+    margin-left:30px ;
+    color: black;
+    text-decoration: none;
+}
+.l3{
+
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+#l1{
+    width: 600px;
+    margin-top: -1100px;
+    margin-left: 450px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(0, 3, 3);
+    text-align: center;
+}
+ .l2{
+    width: 100%;
+    padding: 15px;
+    background-color:aqua;
+    color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 10px;
+}
+.l4{
+    width: 300px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.file{
+    color: aqua;
+    width: 200px;
+    height: 100px;
+}
+button{
+    width: 100px;
+    color: rgb(7, 7, 6);
+    margin-left: 30px;
+    font-size: 20px;
+}
+#app{
+    margin-left: 1000px;
+    margin-top: -700px;
+    width: 300px;
+    height: 200px;
+    background:linear-gradient(aqua,whitesmoke);
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+#app span{
+    margin-top: 40px;
+
+}
+

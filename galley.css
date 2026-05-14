@@ -34,7 +34,7 @@ a:hover{
     color: rgb(128, 207, 243);
     width: 100px;
     height: 80px;
-    border: 5px gold solid;
+    border: 5px rgb(128,207.243) solid;
 }
 #s1{
     float: left;
